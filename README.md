@@ -1,2 +1,2 @@
 # webeditoru
-web editoru odev
+web editoru odev.
