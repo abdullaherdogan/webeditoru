@@ -1,8 +1,9 @@
-var reverseOnlyLetters = function(S) {
-    let T = Array.from(S.replace(/[^a-zA-Z]/g, ''));
-    let ans = new Array(S.length).fill().map((_, j) => {
-        if(S[j].match(/[^a-zA-Z]/)) return S[j];
-        else return T.pop();
-    });
-    return ans.join('');
+var findSpecialInteger = function(arr) {
+    const ws = Math.floor(arr.length / 4);
+    for (let i = 0; i < arr.length - ws; i++) {
+        if (arr[i] === arr[i + ws]) {
+            return arr[i];
+        }
+    }
+    return -1;
 };
